@@ -1,0 +1,45 @@
+{
+    "name": "tsarbo/smsapicom",
+    "description": "Smsapi Notifications Channel for Laravel",
+    "homepage": "https://github.com/tsarbo/smsapicom",
+    "license": "MIT",
+    "source": {
+        "url": "git@gitlab.com:tsarbo/smsapicom.git",
+        "type": "git",
+        "reference": "master"
+    },
+    "authors": [
+        {
+            "name": "Mateusz Drost",
+            "email": "mat.drost@gmail.com",
+            "homepage": "https://github.com/mdrost",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/notifications": "^5.3",
+        "illuminate/support": "^5.3",
+        "smsapicom/smsapicom-php-client": "^1.8"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Smsapi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Smsapi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
